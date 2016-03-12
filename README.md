@@ -1,4 +1,7 @@
-This Dockerfile assumes that you have extracted Youtrack 6.0 files to './files' directory without data subdir.
+This Dockerfile assumes that you have extracted Youtrack 6.0 files to './files' directory without data subdir (because it will be overrided by volume in docker-compose.yml).
+
+RUN:
+  docker-compose up -d
 
 TODO:
   - make volume for backups.
