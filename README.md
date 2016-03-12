@@ -7,4 +7,5 @@ RUN:
 TODO:
   - make volume for backups.
   - download Youtrack dist zip in the Dockerfile to avoid store files in workdir.
+  - run Youtrack server from runit.
   
