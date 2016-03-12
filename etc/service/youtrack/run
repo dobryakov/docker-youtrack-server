@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /home/youtrack
+java -Duser.home=/youtrack-data -XX:MaxPermSize=150m -Xmx1g -jar /youtrack.jar 8080
