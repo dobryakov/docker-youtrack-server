@@ -15,6 +15,6 @@ ADD ./etc /etc
 
 EXPOSE 8080
 
-VOLUME [ "/youtrack-data" ]
+#VOLUME [ "/youtrack-data" ]
 
 CMD ["/sbin/my_init"]

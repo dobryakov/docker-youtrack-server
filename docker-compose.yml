@@ -1,0 +1,19 @@
+version: '2'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: c7-youtrack-server
+    depends_on:
+      - data
+    volumes_from:
+      - data
+    ports:
+      - "8080:8080"
+    
+  data:
+    image: ubuntu:14.04
+    volumes:
+      - /youtrack-data
+    
