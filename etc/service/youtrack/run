@@ -1,3 +1,8 @@
 #!/bin/sh
-cd /home/youtrack
-java -Duser.home=/youtrack-data -XX:MaxPermSize=150m -Xmx1g -jar /youtrack.jar 8080
+
+#cd /home/youtrack
+#java -Duser.home=/youtrack-data -XX:MaxPermSize=150m -Xmx1g -jar /youtrack.jar 8080
+
+chown -R youtrack:youtrack /home/youtrack
+su - youtrack -c "cd /home/youtrack/YouTrack/bin; ./youtrack.sh start"
+exit 0

@@ -15,5 +15,5 @@ services:
   data:
     image: ubuntu:14.04
     volumes:
-      - /youtrack-data
+      - /home/youtrack/YouTrack/data
     
